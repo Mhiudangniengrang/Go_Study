@@ -191,7 +191,17 @@ function Home() {
         duration: 2,
       });
     } else {
-      fetchPostAttendance(userId);
+      fetchPostAttendance(userId)
+        .then(() => {
+          fetchGetUserHome(userId);
+        })
+        .catch((error) => {
+          notification.error({
+            message: "Error",
+            description: "Failed to record attendance.",
+            duration: 2,
+          });
+        });
     }
   };
 

@@ -3,6 +3,7 @@ import { useParams, useLocation } from "react-router";
 import { ZegoUIKitPrebuilt } from "@zegocloud/zego-uikit-prebuilt";
 import { v4 } from "uuid";
 import { Card, Typography } from "antd";
+// Use the uploaded image path here
 import room from "../assets/account/rom.png";
 
 const { Title, Text } = Typography;
@@ -53,11 +54,10 @@ function RoomZego() {
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
-        marginTop: "100px",
+        height: "100vh", // Set height to cover the full viewport
       }}
     >
-      {" "}
-      <div id="meeting-container"></div>
+      <div id="meeting-container" style={{ height: "100%" }}></div>
     </div>
   );
 }

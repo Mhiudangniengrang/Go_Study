@@ -125,7 +125,7 @@ function Payment() {
 
   return (
     <div className="flex justify-center items-center max-h-screen bg-white">
-      <div className="bg-white p-10 rounded-lg shadow-lg max-w-6xl mx-4">
+      <div className=" p-10 rounded-lg shadow-lg max-w-6xl mx-4">
         {loading ? (
           <Loading />
         ) : (

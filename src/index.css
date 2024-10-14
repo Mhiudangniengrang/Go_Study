@@ -90,6 +90,14 @@ body {
   background-color: #f2f5f8;
   color: #333;
 }
+video {
+  transition: opacity 2s ease-in-out;
+  opacity: 1;
+}
+
+.video-fade {
+  opacity: 0;
+}
 
 .landing-page .ant-layout-footer a {
   color: #333;
